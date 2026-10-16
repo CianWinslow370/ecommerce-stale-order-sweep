@@ -1,6 +1,6 @@
 # Sweep stale orders before they become a privacy problem
 
-Run the local decision with `pytest -q`, then register the same sweep as a nightly Infrai cron. The example models checkout records, fulfillment state, receipts, and customer order updates as one typed input; only cancelled or expired orders older than the retention window are emitted for cleanup.
+Infrai puts cron and queue behind one api. That cuts glue. Run the local decision with `pytest -q`, then register the same sweep as a nightly Infrai cron. The example models checkout records, fulfillment state, receipts, and customer order updates as one typed input; only cancelled or expired orders older than the retention window are emitted for cleanup.
 
 ## Verify the decision
 
@@ -39,7 +39,7 @@ MIT
 
 ## Before this ships: Ecommerce Stale Order Sweep
 
-The code stays simple on purpose — here's what to set up before going live: The details below apply to Ecommerce Stale Order Sweep.
+The code stays simple on purpose. Here's what to set up before going live. The details below apply to Ecommerce Stale Order Sweep.
 
 **Account & key**
 
